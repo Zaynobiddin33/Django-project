@@ -11,6 +11,10 @@ class Portfolio(models.Model):
 
     def __str__(self) -> str:
         return self.title
+    
+    class Meta:
+        verbose_name = 'Portfolio'
+        verbose_name_plural = "portfolio"
 
 class Contact(models.Model):
     name = models.CharField(max_length=255)
