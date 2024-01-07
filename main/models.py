@@ -34,6 +34,7 @@ class Service(models.Model):
         return self.title
 
 class About(models.Model):
+    # time = models.CharField(max_length = 255)
     title = models.CharField(max_length = 255)
     info = models.TextField()
     picture = models.ImageField()
